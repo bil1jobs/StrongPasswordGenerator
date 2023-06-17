@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta na me="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main>
+      <section class="left-section">
+        <img class="img-password" src="icons/passwordIcon.png" alt="" />
+        <div class="options-section">
+          <label>abc</label>
+          <input type="checkbox" id="miniscules" class="checkbox" />
+          <label> ABC</label>
+          <input type="checkbox" id="majuscules" class="checkbox" />
+          <label>123</label>
+          <input type="checkbox" id="digits" class="checkbox" />
+          <label>@#!</label>
+          <input type="checkbox" id="specialCharacters" class="checkbox" />
+        </div>
+      </section>
+      <section class="right-section">
+        <div class="generate-section">
+          <h1 class="title">Strong password generator</h1>
+          <p>Create Strong Passwords and don't worry about being HACKED!</p>
+          <div class="input-copy">
+            <input type="text" id="password" disabled />
+            <img src="icons/copyIcon.png" id="copyButton" />
+          </div>
+
+          <button id="generateButton">Generate new</button>
+        </div>
+        <div class="lengthDisplay-section">
+          <label id="lengthDisplay"></label>
+          <input type="range" min="8" max="32" id="passwordLength" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

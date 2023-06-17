@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  min-height: 30vh;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #003cff;
+}
+.generate-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  flex: 1;
+}
+p {
+  font-size: 22px;
+}
+#password {
+  width: 420px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+}
+#copyButton {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+#generateButton {
+  font-weight: bold;
+  font-size: medium;
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  border: 0;
+  border-radius: 5px;
+  background-color: #003cff;
+  color: #fff;
+  cursor: pointer;
+}
+#generateButton:hover {
+  background-color: rgb(10, 30, 60);
+}
+.input-copy {
+  display: flex;
+  justify-content: space-around;
+}
+.lengthDisplay-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.options-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+label {
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+@media screen and (max-width: 750px) {
+  main {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+  .right-section {
+    gap: 10px;
+  }
+  .left-section {
+    order: 2;
+  }
+  .left-section > img {
+    order: 2;
+  }
+}
